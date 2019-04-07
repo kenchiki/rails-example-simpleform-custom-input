@@ -1,0 +1,26 @@
+@import "bootstrap_variables";
+@import "bootstrap";
+@import "module_variables";
+@import "module/module";
+
+//#wrapper
+//  %header#header
+//    %h1= link_to('Devise Stock', root_path)
+//    - if user_signed_in?
+//      %p= link_to "ログアウト", destroy_user_session_path, method: :delete
+//  #container
+//    = yield
+
+#header {
+  background: #D2E3E1;
+  padding: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#container {
+  @include container();
+  margin-top: 50px;
+}
